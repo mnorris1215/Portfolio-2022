@@ -1,0 +1,7 @@
+{{ range .Site.Params.external_js }}
+<script type="text/javascript" src="{{ . }}"></script>
+{{ end }}
+
+{{ range .Site.Params.custom_js }}
+<script type="text/javascript" src="{{ relURL ($.Site.BaseURL) }}{{ . }}" defer></script>
+{{ end }}

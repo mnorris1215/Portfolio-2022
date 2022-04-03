@@ -1,0 +1,16 @@
+  <!-- meta -->
+  {{ hugo.Generator}}
+  {{ if and (ne .Params.noindex true) (in (slice (getenv "HUGO_ENV") hugo.Environment) "production") }}
+  <meta name="robots" content="index, follow">
+{{else}}
+  <meta name="robots" content="noindex, nofollow"> 
+{{end}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ with .Params.canonical }}
+  <link rel='canonical' href='{{ . }}'>
+  {{ end }}
+
+  {{ template "_internal/opengraph.html" . }}
+  {{- template "_internal/schema.html" . -}}
+  {{- template "_internal/twitter_cards.html" . -}}

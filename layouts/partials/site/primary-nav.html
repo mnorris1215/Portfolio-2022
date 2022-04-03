@@ -1,0 +1,10 @@
+<nav id="primary-nav" class="row" role="navigation">
+  {{ if .Site.Menus.main }}
+    <ul class="menu">
+      {{ range .Site.Menus.main }}
+        <li class=""><a class="" href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+    <hr />
+  {{- end -}}
+</nav>

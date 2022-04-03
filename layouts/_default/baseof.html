@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en-us" }}">
+    {{ block "head" . }}{{- partial "site/head.html" . -}}{{ end }}
+    <body>
+        {{ block "header " . }}{{ partial "site/header.html" . }}{{ end }}
+        {{ block "primary-navigation " . }}{{ partial "site/primary-nav.html" . }}{{ end }}
+
+        <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+            <div id="content" class="px-5 py-6 sm:px-6">
+                <main class="" role="main">
+                    {{- block "main" . }}{{- end }}
+                </main>
+            </div><!--#content-->
+        </div><!--.maxw-->
+        {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+        {{ block "site/scripts-foot" . }}{{ partial "site/scripts-foot.html" . }}{{ end }}
+    </body>
+</html>

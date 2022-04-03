@@ -1,0 +1,10 @@
+<head>
+  <title>{{ block "title" . }}{{- with .Params.Title }}{{ . }} - {{ end }}{{ .Site.Title -}}{{ end }}</title>
+
+  {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+  {{ block "site/stylesheets" . }}{{ partial "site/stylesheets.html" . }}{{ end }}
+  {{ block "site/scripts-head" . }}{{ partial "site/scripts-head.html" . }}{{ end }}
+  {{ block "favicon" . }}{{ partialCached "site/favicon.html" . }}{{ end }}
+</head>
+
+
