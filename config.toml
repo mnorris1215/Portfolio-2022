@@ -1,3 +1,9 @@
 baseURL = "https://mnorris1215.github.io/"
 languageCode = "en-us"
 title = "Monica Norris Portfolio"
+
+[menu]
+[[menu.main]]
+  title = 'Resume'
+  weight = 4
+  url = "/uploads/monica_norris_resume_2022.pdf"
