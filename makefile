@@ -8,7 +8,7 @@ hugo:
 #Run Tailwind build with npx. Find unprocessed.css and output styles.css
 build:
 	make sync
-	npx tailwindcss build static/css/unprocessed.css -o static/css/styles.css --watch
+	npx tailwindcss -i static/css/unprocessed.css -o static/css/styles.css --watch
 
 
 sync:
