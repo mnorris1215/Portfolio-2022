@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en-us" }}">
     {{ block "head" . }}{{- partial "site/head.html" . -}}{{ end }}
-    <body>
-        {{ block "header " . }}{{ partial "site/header.html" . }}{{ end }}
+    <body class="overflow-x-hidden bg-black text-white">
         {{ block "primary-navigation " . }}{{ partial "site/primary-nav.html" . }}{{ end }}
+        {{ block "header " . }}{{ partial "site/header.html" . }}{{ end }}
 
         <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div id="content" class="px-5 py-6 sm:px-6">

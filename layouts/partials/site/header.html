@@ -1,6 +1,13 @@
 <header class="site-header">
+	<div class="ml-20 mt-10">
+		<a href="/" class="inline-block text-gray-400 border border-gray-400 rounded-full p-4 hover:border-white hover:text-white transition duration-300">
+			<h4 class="my-0">MN</h4>
+		</a>
+	</div>
+	
 {{ if .IsHome }}
 	{{ partial "site/hp-header" . }}
-{{ end }}
+
+	{{ end }}
 
 </header>

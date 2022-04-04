@@ -1,10 +1,9 @@
-<nav id="primary-nav" class="row" role="navigation">
+<nav id="primary-nav" class="absolute top-1/3 left-20" role="navigation">
   {{ if .Site.Menus.main }}
-    <ul class="menu">
+    <ul class="border-r border-gray-400 pr-6">
       {{ range .Site.Menus.main }}
-        <li class=""><a class="" href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a></li>
+        <li class="my-12"><a class="text-xl md:text-2xl text-gray-400 hover:text-white transition duration-300" href="{{ .URL }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
-    <hr />
   {{- end -}}
 </nav>
