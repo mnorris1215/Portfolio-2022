@@ -48,11 +48,11 @@ a:not([class]){
 }
 
 pre{
-  @apply my-8 py-8 px-4 bg-gray-700 rounded-sm shadow-md;
+  @apply my-8 py-8 px-4 bg-gray-800 rounded-sm shadow-md;
 }
 
 code{
-  @apply bg-gray-700 text-yellow-500 rounded-sm p-px;
+  @apply bg-gray-800 text-yellow-500 rounded-sm p-px;
 }
 
 

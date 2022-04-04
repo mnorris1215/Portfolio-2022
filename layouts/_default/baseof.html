@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en-us" }}">
     {{ block "head" . }}{{- partial "site/head.html" . -}}{{ end }}
-    <body class="overflow-x-hidden bg-black text-white">
+    <body class="overflow-x-hidden bg-black bg-site-background bg-opacity-10 text-white">
         {{ block "primary-navigation " . }}{{ partial "site/primary-nav.html" . }}{{ end }}
         {{ block "header " . }}{{ partial "site/header.html" . }}{{ end }}
 

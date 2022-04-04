@@ -6,7 +6,11 @@ module.exports = {
     './layouts/*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'site-background': "url('/images/dark_wood.png')",
+      }
+    },
   },
   plugins: [],
 }
