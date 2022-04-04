@@ -8,3 +8,13 @@ title = "Monica Norris Portfolio"
   name = 'Resume'
   weight = 4
   url = "/uploads/monica_norris_resume_2022.pdf"
+
+[[menu.main]]
+  title = 'Contact'
+  name = 'Contact'
+  weight = 5
+  url = "#contact"
+
+
+[params]
+custom_js = ["js/main.js"]

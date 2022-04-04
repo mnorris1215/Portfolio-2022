@@ -2,7 +2,7 @@
   {{ if .Site.Menus.main }}
     <ul class="border-r border-gray-300 pr-6">
       {{ range .Site.Menus.main }}
-        <li class="my-12"><a class="text-xl md:text-2xl text-gray-300 hover:text-white transition duration-300" href="{{ .URL }}">{{ .Title }}</a></li>
+        <li class="my-12"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} text-xl md:text-2xl text-gray-300 hover:text-white transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
   {{- end -}}
