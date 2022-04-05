@@ -1,0 +1,26 @@
+<div class="w-full h-0.5 bg-white mt-24 mb-4"></div>
+
+
+<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 pt-16 pb-48">
+  <!-- Get image -->
+  {{ $img := resources.Get .Params.featured_image }}
+
+  <!-- Resize image as a test it's working -->
+  {{- $desktop := $img.Resize "1100x" }}
+  {{- $mobile := $img.Resize "800x" }}
+
+  <div class="block col-span-2 h-[550px] max-w-4xl p-16 bg-stone-800 bg-opacity-80">
+    <a href="{{ .RelPermalink }}" class="block w-full h-full  hover:scale-105 transition duration-1000">
+      <picture class="">
+        <source media="(max-width:401px)" srcset="{{ $img.RelPermalink }}">
+        <img src="{{ $img.RelPermalink }}" class="h-full w-full object-cover shadow-2xl bg-stone-700 p-4 bg-opacity-40">
+      </picture>
+    </a>
+  </div>
+
+
+  <div class="">
+    <a href="{{ .RelPermalink }}" class="block"><h2 class="mt-0 mb-8">{{ .Title }}</h2></a>
+    <p>{{ .Params.description }}</p>
+  </div>
+</div>

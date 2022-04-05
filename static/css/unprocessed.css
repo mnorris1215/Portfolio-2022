@@ -44,7 +44,7 @@ h5 {
 }
 
 a:not([class]){
-  @apply text-gray-400 underline hover:text-white transition duration-300;
+  @apply  underline hover:text-green-700 transition duration-300;
 }
 
 pre{

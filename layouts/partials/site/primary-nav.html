@@ -1,9 +1,18 @@
-<nav id="primary-nav" class="absolute top-1/3 left-20" role="navigation">
-  {{ if .Site.Menus.main }}
-    <ul class="border-r border-gray-300 pr-6">
-      {{ range .Site.Menus.main }}
-        <li class="my-12"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} text-xl md:text-2xl text-gray-300 hover:text-white transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
-  {{- end -}}
+
+<nav id="primary-nav" class="max-w-screen-2xl mx-auto" role="navigation">
+  <div class="flex justify-between items-center mx-10">
+    <div class="">
+      <a href="/" class="inline-block text-gray-300 border border-gray-300 rounded-full py-4 px-3 hover:border-green-700 hover:text-green-700 transition duration-300">
+        <h4 class="my-0">MN</h4>
+      </a>
+    </div>
+  
+    {{ if .Site.Menus.main }}
+      <ul class="flex justify-end">
+        {{ range .Site.Menus.main }}
+          <li class="my-12 mx-4"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} text-xl hover:text-green-700 transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{- end -}}
+  </div>
 </nav>
