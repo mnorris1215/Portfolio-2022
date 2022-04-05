@@ -1,6 +1,6 @@
 +++
 title = "Mitch Lacey"
-filters = ["Product Development", "Content Management", "E-Commerce"]
+filters = ["Web Applications", "Product Development", "Content Management"]
 publishDate = "2020-02-21T00:23:38+00:00"
 featured_image = "images/work/mitchlacey.png"
 +++

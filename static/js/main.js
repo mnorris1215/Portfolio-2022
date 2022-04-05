@@ -16,3 +16,32 @@ function smoothScroll(e){
     behavior: "smooth"
   })
 }
+
+
+
+
+///////////////////////////////////////////////////////////////////////////Work
+var $grid = $('#work').isotope({
+  // itemSelector: '.case-study',
+  transitionDuration: 500,
+  horizontalOrder: true,
+
+  // layout mode options
+  masonry: {
+    horizontalOrder: true
+  }
+});
+
+var filter = "";
+
+$('.work-filters').on( 'click', '.filter', function() {
+  var $this = $(this);
+
+  $this.addClass('active').siblings().removeClass('active');
+
+  // set filter for group
+  filter = $this.attr('data-filter');
+
+  $grid.isotope({filter: filter})
+
+});

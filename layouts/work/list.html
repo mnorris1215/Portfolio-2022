@@ -1,14 +1,32 @@
 {{ define "main" }}
 <div class="">
   <h1 class="font-normal mb-0 text-8xl">{{ .Title }}</h1>
+  <div class="w-full h-0.5 bg-white mt-24 mb-4"></div>
 
-  <div>
-    {{ .Content }}
+
+
+  {{ $filterList := slice }}
+
+  {{ range .Pages }}
+    {{ range .Params.filters }}
+      {{ $filterList = $filterList | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ $filters := $filterList | uniq }}
+
+  <!-- Work filter options -->
+  <div class=" my-8 ">
+    <div class="work-filters flex flex-wrap">
+    {{ range $filters }}
+      <p class="filter text-xl font-bold mr-8 pb-2 cursor-pointer border-b border-transparent transition" data-filter=".{{ .| urlize }}">{{ . }}</p>
+    {{ end }}
+    </div>
   </div>
-
+  
   <div>
     {{ range .Pages }}
-      <h3>{{ .Title }}</h3>
+      {{ partial "site/work-list" . }}
     {{ end }}
   </div>
 

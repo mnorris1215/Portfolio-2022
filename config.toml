@@ -17,4 +17,5 @@ title = "Monica Norris Portfolio"
 
 
 [params]
-custom_js = ["js/main.js"]
+custom_js = ["js/isotope.js", "js/main.js"]
+external_js = ["https://code.jquery.com/jquery-3.6.0.slim.min.js"]
