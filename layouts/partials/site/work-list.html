@@ -1,3 +1,17 @@
+{{ $img := resources.Get .Params.featured_image }}
+
+<!-- Resize image as a test it's working -->
+{{- $desktop := $img.Resize "1100x" }}
+{{- $mobile := $img.Resize "800x" }}
+
+
 <a href="{{ .RelPermalink }}" class="text-white case-study relative block w-full md:w-1/2 pt-20 {{ range .Params.filters }} {{ . | urlize }} {{ end }}">
-  <p class="text-2xl transition-all duration-500 left-0">{{ .Title }}</p>
+  
+  <img src="{{ $desktop.RelPermalink }}" class="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover" alt="">
+
+  <div class="absolute top-0 left-0 bottom-0 right-0  hover:bg-white hover:bg-opacity-100 transition duration-1000"></div>
+  
+  <!-- <div class="case-study-text absolute bottom-10 z-10 px-2 sm:px-4 lg:px-12 text-white pt-24 transition-all duration-500">
+    <p class="text-4xl transition-all duration-500 left-0">{{ .Title }}</p>
+  </div> -->
 </a>
