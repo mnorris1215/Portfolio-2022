@@ -1,7 +1,7 @@
-<div class="article-top-bar h-px bg-white mt-24 mb-4"></div>
+<div class="top-white-line h-px bg-white mt-24 mb-4"></div>
 
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-16 pb-48">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-16 pb-48">
   <!-- Get image -->
   {{ $img := resources.Get .Params.featured_image }}
 
@@ -13,7 +13,7 @@
     <a href="{{ .RelPermalink }}" class="block w-full h-full  hover:scale-105 transition duration-1000">
       <picture class="">
         <source media="(max-width:401px)" srcset="{{ $mobile.RelPermalink }}">
-        <img src="{{ $desktop.RelPermalink }}" class="h-full w-full object-cover shadow-2xl bg-emerald-300 p-4 bg-opacity-20">
+        <img src="{{ $desktop.RelPermalink }}" class="h-full w-full object-cover shadow-2xl bg-emerald-300 p-4 bg-opacity-30">
       </picture>
     </a>
   </div>

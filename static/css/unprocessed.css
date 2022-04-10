@@ -127,11 +127,11 @@ code{
   transition: all .75s ease-in-out;
 }
 
-.article-top-bar{
+.top-white-line{
  width:0;
 }
 
-.article-top-bar.active{
+.top-white-line.active{
   width:100%;
   transition: all 1s ease-in-out;
 }

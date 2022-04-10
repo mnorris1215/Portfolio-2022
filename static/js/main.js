@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   })
 
   transitionBlock(".article-info")
+  transitionBlock(".top-white-line")
 
 })
 
@@ -50,7 +51,9 @@ function transitionBlock(itemClass){
 
     if(isVisible){
       title.classList.add("active")
-      title.parentNode.previousElementSibling.classList.add("active")
+      if(title.parentNode.previousElementSibling){
+        title.parentNode.previousElementSibling.classList.add("active")
+      }
     }
   })
 }
@@ -65,7 +68,7 @@ var $grid = $('#work').isotope({
 
   // layout mode options
   masonry: {
-    horizontalOrder: true
+    horizontalOrder: true,
   }
 });
 
