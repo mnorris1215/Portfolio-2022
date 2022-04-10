@@ -488,16 +488,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.-bottom-6 {
+  bottom: -1.5rem;
+}
+
 .right-0 {
   right: 0px;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-30 {
@@ -635,6 +643,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -661,6 +673,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.-translate-y-16 {
+  --tw-translate-y: -4rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-16 {
+  --tw-translate-y: 4rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-12 {
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-12 {
+  --tw-rotate: -12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-scale-x-100 {
+  --tw-scale-x: -1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
@@ -723,12 +760,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
+.border-8 {
+  border-width: 8px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
 
+.border-r-8 {
+  border-right-width: 8px;
+}
+
+.border-l-8 {
+  border-left-width: 8px;
+}
+
 .border-transparent {
   border-color: transparent;
+}
+
+.border-stone-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(68 64 60 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -783,12 +837,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.3;
 }
 
-.bg-opacity-95 {
-  --tw-bg-opacity: 0.95;
-}
-
 .bg-site-background {
   background-image: url('/images/dark_wood.png');
+}
+
+.bg-gradient-to-bl {
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-white {
+  --tw-gradient-from: #fff;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
+}
+
+.to-green-200 {
+  --tw-gradient-to: #bbf7d0;
 }
 
 .fill-white {
@@ -1103,6 +1170,26 @@ code {
   transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
+/**************************************************************************** BAMBOO DOORS */
+
+.bamboo-doors > div{
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.bamboo-left.remove{
+  transform: translateX(-100%);
+}
+
+.bamboo-right.remove{
+  transform: translateX(100%);
+}
+
+.bamboo-left.remove, .bamboo-right.remove{
+  /* opacity:0; */
+  transition: all 1s ease-in-out;
+}
+
 /**************************************************************************** WORK LIST */
 
 .filter.active {
@@ -1121,44 +1208,16 @@ code {
   transition: all 0.5s ease-in-out;
 }
 
-.case-study-title{
-  top:10%;
-}
-
-.case-study-btn{
-  bottom:10%;
-}
-
 .case-study-overlay:hover .case-study-title{
   opacity:1;
-  top: 22%;
+  transform: translateY(0);
   transition: all 0.5s ease-in-out;
 }
 
 .case-study-overlay:hover .case-study-btn{
   opacity:1;
-  bottom: 22%;
+  transform: translateY(0);
   transition: all 0.5s ease-in-out;
-}
-
-@media (min-width:1024px) {
-  .case-study-overlay:hover .case-study-title{
-    top: 26%;
-  }
-
-  .case-study-overlay:hover .case-study-btn{
-    bottom: 26%;
-  }
-}
-
-@media (min-width:1280px) {
-  .case-study-overlay:hover .case-study-title{
-    top: 22%;
-  }
-
-  .case-study-overlay:hover .case-study-btn{
-    bottom: 22%;
-  }
 }
 
 /**************************************************************************** ARTICLES */

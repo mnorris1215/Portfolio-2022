@@ -1,5 +1,9 @@
 window.addEventListener('DOMContentLoaded', (e) => {
 
+  /////////////////////////////////////////////////////////////////////////////////Bamboo Doors
+  removeDoors()
+
+
   /////////////////////////////////////////////////////////////////////////////////Mobile Menu
 
   let menuBtn = document.querySelector("#menu-btn")
@@ -21,6 +25,16 @@ window.addEventListener('DOMContentLoaded', (e) => {
   transitionBlock(".top-white-line")
 
 })
+
+
+function removeDoors(){
+  let doors = document.querySelectorAll("#bamboo-doors > div")
+  doors.forEach(door => {
+    door.classList.add("remove")
+  })
+}
+
+
 
 document.addEventListener("scroll", () => {
   transitionBlock(".article-info")

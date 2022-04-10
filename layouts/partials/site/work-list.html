@@ -5,18 +5,20 @@
 {{- $mobile := $img.Resize "800x" }}
 
 
-<div class="text-white case-study relative block w-full lg:w-1/2 xl:w-1/3 pt-20 {{ range .Params.filters }} {{ . | urlize }} {{ end }}">
+<div class="text-white case-study relative block w-full lg:w-1/2 xl:w-1/3 pt-20 border-8 border-transparent {{ range .Params.filters }} {{ . | urlize }} {{ end }}">
 
   <img src="{{ $desktop.RelPermalink }}" class="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover" alt="">
 
   <div class="case-study-overlay flex justify-center items-center absolute top-0 left-0 bottom-0 right-0  hover:bg-green-100 hover:bg-opacity-100 transition duration-1000">
-    <div class="case-study-title absolute left-0 right-0 text-green-800 text-center px-4">
-      <h2 class=" inline-block mt-0 ">{{ .Title }}</h2> <br>
-      <span class="px-2">{{ delimit .Params.filters " / " }}</span>
-    </div>
-    
-    <div class="case-study-btn absolute left-0 right-0 flex justify-center">
-      <a href="{{ .RelPermalink }}" class="inline-block px-4 py-2 text-center border rounded-sm border-green-800 text-green-800 hover:bg-green-800 hover:text-white transition duration-500">Learn More</a>
+    <div>
+      <div class="case-study-title -translate-y-16 text-green-800 text-center px-4">
+        <h2 class=" inline-block mt-0 ">{{ .Title }}</h2> <br>
+        <span class="px-2">{{ delimit .Params.filters " / " }}</span>
+      </div>
+      
+      <div class="case-study-btn translate-y-16 flex justify-center mt-12">
+        <a href="{{ .RelPermalink }}" class="inline-block px-4 py-2 text-center border rounded-sm border-green-800 text-green-800 hover:bg-green-800 hover:text-white transition duration-500">Learn More</a>
+      </div>
     </div>
   </div>
 

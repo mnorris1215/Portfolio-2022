@@ -114,6 +114,26 @@ code{
   transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
+/**************************************************************************** BAMBOO DOORS */
+.bamboo-doors > div{
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.bamboo-left.remove{
+  transform: translateX(-100%);
+}
+
+.bamboo-right.remove{
+  transform: translateX(100%);
+}
+
+.bamboo-left.remove, .bamboo-right.remove{
+  /* opacity:0; */
+  transition: all 1s ease-in-out;
+}
+
+
 /**************************************************************************** WORK LIST */
 
 .filter.active{
@@ -129,46 +149,18 @@ code{
   transition: all 0.5s ease-in-out;
 }
 
-.case-study-title{
-  top:10%;
-}
-
-.case-study-btn{
-  bottom:10%;
-}
-
 .case-study-overlay:hover .case-study-title{
   opacity:1;
-  top: 22%;
+  transform: translateY(0);
   transition: all 0.5s ease-in-out;
 }
 
 .case-study-overlay:hover .case-study-btn{
   opacity:1;
-  bottom: 22%;
+  transform: translateY(0);
   transition: all 0.5s ease-in-out;
 }
 
-
-@media (min-width:1024px) {
-  .case-study-overlay:hover .case-study-title{
-    top: 26%;
-  }
-  
-  .case-study-overlay:hover .case-study-btn{
-    bottom: 26%;
-  }
-}
-
-@media (min-width:1280px) {
-  .case-study-overlay:hover .case-study-title{
-    top: 22%;
-  }
-  
-  .case-study-overlay:hover .case-study-btn{
-    bottom: 22%;
-  }
-}
 
 
 
