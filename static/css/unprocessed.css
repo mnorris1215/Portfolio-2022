@@ -56,7 +56,53 @@ code{
 }
 
 
-
+/**************************************************************************** WORK LIST */
 #work .case-study{
   height: 450px;
+}
+
+.case-study-title, .case-study-btn{
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+
+.case-study-title{
+  top:10%;
+}
+
+.case-study-btn{
+  bottom:10%;
+}
+
+.case-study-overlay:hover .case-study-title{
+  opacity:1;
+  top: 22%;
+  transition: all 0.5s ease-in-out;
+}
+
+.case-study-overlay:hover .case-study-btn{
+  opacity:1;
+  bottom: 22%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+@media (min-width:1024px) {
+  .case-study-overlay:hover .case-study-title{
+    top: 26%;
+  }
+  
+  .case-study-overlay:hover .case-study-btn{
+    bottom: 26%;
+  }
+}
+
+@media (min-width:1280px) {
+  .case-study-overlay:hover .case-study-title{
+    top: 22%;
+  }
+  
+  .case-study-overlay:hover .case-study-btn{
+    bottom: 22%;
+  }
 }
