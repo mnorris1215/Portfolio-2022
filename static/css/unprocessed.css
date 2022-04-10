@@ -6,7 +6,11 @@
 
 
 /**************************************************************************** TYPOGRAPHY */
-p {margin-bottom: 1.15rem;}
+p {
+  font-size: 20px;
+  margin-bottom: 1.15rem;
+  line-height:1.7;
+}
 
 h1,
 h2,
@@ -48,11 +52,11 @@ a:not([class]){
 }
 
 pre{
-  @apply my-8 py-8 px-4 bg-gray-800 rounded-sm shadow-md;
+  @apply my-8 py-8 px-4 bg-stone-900 bg-opacity-80 rounded-sm shadow-md;
 }
 
 code{
-  @apply bg-gray-800 text-yellow-500 rounded-sm p-px;
+  @apply bg-stone-900 bg-opacity-80 text-green-500 rounded-sm p-px;
 }
 
 

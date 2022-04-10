@@ -500,22 +500,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 2 / span 2;
 }
 
-.m-8 {
-  margin: 2rem;
-}
-
-.m-2 {
-  margin: 0.5rem;
-}
-
-.m-4 {
-  margin: 1rem;
-}
-
-.m-1 {
-  margin: 0.25rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -551,20 +535,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mr-8 {
@@ -589,6 +573,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-mt-48 {
   margin-top: -12rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -653,6 +641,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-screen-2xl {
   max-width: 1536px;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .max-w-5xl {
@@ -737,6 +729,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(22 101 52 / var(--tw-border-opacity));
 }
 
+.border-green-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(21 128 61 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -777,29 +774,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #fff;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-16 {
@@ -808,10 +785,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-4 {
@@ -928,6 +901,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(22 101 52 / var(--tw-text-opacity));
 }
 
+.text-green-700 {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -961,7 +939,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 /**************************************************************************** TYPOGRAPHY */
 
 p {
+  font-size: 20px;
   margin-bottom: 1.15rem;
+  line-height:1.7;
 }
 
 h1,
@@ -1018,8 +998,8 @@ pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 0.125rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.8;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
@@ -1031,11 +1011,11 @@ pre {
 
 code {
   border-radius: 0.125rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.8;
   padding: 1px;
   --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 /**************************************************************************** WORK LIST */
@@ -1192,9 +1172,5 @@ code {
 @media (min-width: 1280px) {
   .xl\:w-1\/3 {
     width: 33.333333%;
-  }
-
-  .xl\:w-1\/4 {
-    width: 25%;
   }
 }
