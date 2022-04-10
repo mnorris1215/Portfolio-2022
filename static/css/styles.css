@@ -468,6 +468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -551,6 +555,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -593,6 +601,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-0 {
   height: 0px;
+}
+
+.h-px {
+  height: 1px;
 }
 
 .h-\[550px\] {
@@ -906,12 +918,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 1000ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 /**************************************************************************** TYPOGRAPHY */
@@ -996,6 +1008,13 @@ code {
 
 /**************************************************************************** WORK LIST */
 
+.filter.active {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
 #work .case-study{
   height: 450px;
 }
@@ -1043,6 +1062,28 @@ code {
   .case-study-overlay:hover .case-study-btn{
     bottom: 22%;
   }
+}
+
+/**************************************************************************** ARTICLES */
+
+.article-info{
+  opacity:0;
+  transform: translateY(20%);
+}
+
+.article-info.active{
+  opacity:1;
+  transform: translateY(0);
+  transition: all .75s ease-in-out;
+}
+
+.article-top-bar{
+  width:0;
+}
+
+.article-top-bar.active{
+  width:100%;
+  transition: all 1s ease-in-out;
 }
 
 .hover\:scale-105:hover {

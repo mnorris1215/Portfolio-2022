@@ -1,9 +1,18 @@
 window.addEventListener('DOMContentLoaded', (e) => {
+
+  
   const anchorLinks = document.querySelectorAll(".smooth-scroll")
 
   anchorLinks.forEach(link => {
     link.addEventListener("click", smoothScroll)
   })
+
+  transitionBlock(".article-info")
+
+})
+
+document.addEventListener("scroll", () => {
+  transitionBlock(".article-info")
 })
 
 
@@ -18,9 +27,37 @@ function smoothScroll(e){
 }
 
 
+function isScrolledIntoView(el) {
+  var rect = el.getBoundingClientRect();
+  var elemTop = rect.top;
+  var elemBottom = rect.bottom;
+
+  // Only completely visible elements return true:
+  var isVisible = (elemTop >= 0) && ((elemBottom - 400) <= window.innerHeight);
+  // Partially visible elements return true:
+  //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+  return isVisible;
+}
 
 
-///////////////////////////////////////////////////////////////////////////Work
+//Check if an article is visible
+function transitionBlock(itemClass){
+  /////////////////////////////////////////////////////////////////////////////////Articles
+  let articleTitles = document.querySelectorAll(itemClass)
+
+  articleTitles.forEach(title => {
+    let isVisible = isScrolledIntoView(title)
+
+    if(isVisible){
+      title.classList.add("active")
+      title.parentNode.previousElementSibling.classList.add("active")
+    }
+  })
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////Work
 var $grid = $('#work').isotope({
   // itemSelector: '.case-study',
   transitionDuration: 500,

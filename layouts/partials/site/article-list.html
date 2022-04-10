@@ -1,7 +1,7 @@
-<div class="w-full h-0.5 bg-white mt-24 mb-4"></div>
+<div class="article-top-bar h-px bg-white mt-24 mb-4"></div>
 
 
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 pt-16 pb-48">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-16 pb-48">
   <!-- Get image -->
   {{ $img := resources.Get .Params.featured_image }}
 
@@ -19,8 +19,8 @@
   </div>
 
 
-  <div class="">
-    <a href="{{ .RelPermalink }}" class="block"><h2 class="mt-0 mb-8">{{ .Title }}</h2></a>
+  <div class="article-info mt-12">
+    <a href="{{ .RelPermalink }}" class="block hover:text-green-700 transition duration-500"><h2 class="mt-0 mb-8">{{ .Title }}</h2></a>
     <p>{{ .Params.description }}</p>
   </div>
 </div>

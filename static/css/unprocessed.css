@@ -57,6 +57,11 @@ code{
 
 
 /**************************************************************************** WORK LIST */
+
+.filter.active{
+  @apply text-green-600 border-green-600;
+}
+
 #work .case-study{
   height: 450px;
 }
@@ -105,4 +110,28 @@ code{
   .case-study-overlay:hover .case-study-btn{
     bottom: 22%;
   }
+}
+
+
+
+
+/**************************************************************************** ARTICLES */
+.article-info{
+  opacity:0;
+  transform: translateY(20%);
+}
+
+.article-info.active{
+  opacity:1;
+  transform: translateY(0);
+  transition: all .75s ease-in-out;
+}
+
+.article-top-bar{
+ width:0;
+}
+
+.article-top-bar.active{
+  width:100%;
+  transition: all 1s ease-in-out;
 }
