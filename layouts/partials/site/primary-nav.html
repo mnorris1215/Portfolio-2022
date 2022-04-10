@@ -2,18 +2,34 @@
 
 <nav id="primary-nav" class="max-w-screen-2xl mx-auto" role="navigation">
   <div class="flex justify-between items-center mx-10">
-    <div class="">
-      <a href="/" class="inline-block text-gray-300 border border-gray-300 rounded-full py-4 px-3 hover:border-green-700 hover:text-green-700 transition duration-300">
+      <a href="/" class="logo relative z-30 inline-block text-white border border-white rounded-full py-4 px-3 hover:border-green-700 hover:text-green-700 transition duration-300">
         <h4 class="my-0">MN</h4>
       </a>
-    </div>
-  
+    
+
     {{ if .Site.Menus.main }}
-      <ul class="flex justify-end">
+      <ul class="hidden md:flex justify-end">
         {{ range .Site.Menus.main }}
           <li class="my-12 mx-4"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} {{ if $currentPage.IsMenuCurrent "main" . }} text-green-700 border-green-700 {{ end }} text-xl border-b border-transparent pb-2 hover:text-green-700 transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
+
+      <div id="menu-btn" class="md:hidden burger relative z-30 cursor-pointer">
+        <div class="strip burger-strip">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden mobile-menu fixed z-20 top-0 left-0 bottom-0 right-0 bg-stone-900">
+        <ul class="block text-center pt-24">
+          {{ range .Site.Menus.main }}
+            <li class="my-12 mx-4"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} {{ if $currentPage.IsMenuCurrent "main" . }} text-green-700 border-green-700 {{ end }} text-3xl border-b border-transparent pb-2 hover:text-green-700 transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
     {{- end -}}
   </div>
+
 </nav>

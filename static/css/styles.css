@@ -472,6 +472,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -494,6 +498,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-0 {
   right: 0px;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .col-span-2 {
@@ -573,10 +585,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-mt-48 {
   margin-top: -12rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -695,6 +703,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.5rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -719,19 +731,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
-.border-gray-300 {
+.border-white {
   --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.border-green-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(22 101 52 / var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-green-700 {
   --tw-border-opacity: 1;
   border-color: rgb(21 128 61 / var(--tw-border-opacity));
+}
+
+.border-green-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 101 52 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -754,6 +766,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(110 231 183 / var(--tw-bg-opacity));
 }
 
+.bg-stone-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -764,6 +781,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-95 {
+  --tw-bg-opacity: 0.95;
 }
 
 .bg-site-background {
@@ -874,6 +895,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -891,19 +917,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
+.text-green-700 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 .text-green-800 {
   --tw-text-opacity: 1;
   color: rgb(22 101 52 / var(--tw-text-opacity));
-}
-
-.text-green-700 {
-  --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -1016,6 +1037,70 @@ code {
   padding: 1px;
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+/**************************************************************************** MENU */
+
+.logo{
+  box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+}
+
+.burger {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transition: all .5s ease;
+  margin: 1em;
+}
+
+.burger:hover, .burger.active {
+  background: rgb(0, 98, 0);
+}
+
+.burger-strip {
+  transition: all .5s ease;
+}
+
+.strip div {
+  height: 3px;
+  border-radius: 2px;
+  background: rgb(56 56 56);
+  margin: 10px;
+  transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 40px;
+}
+
+.burger:hover .strip div, .burger.active .strip div {
+  background: white;
+}
+
+/* BURGER 1 */
+
+.burger-strip div:first-child {
+  width: 16px;
+}
+
+.burger-strip div:last-child {
+  width: 28px;
+}
+
+.burger:hover .burger-strip div:first-child, .burger.active .burger-strip div:first-child{
+  transform: rotate(45deg) translateY(1px) translateX(5px);
+}
+
+.burger:hover .burger-strip div:nth-child(2), .burger.active .burger-strip div:nth-child(2){
+  transform: rotate(-45deg);
+}
+
+.burger:hover .burger-strip div:last-child, .burger.active .burger-strip div:last-child{
+  transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
 /**************************************************************************** WORK LIST */
@@ -1146,6 +1231,16 @@ code {
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 }
 

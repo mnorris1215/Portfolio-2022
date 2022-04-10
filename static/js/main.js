@@ -1,5 +1,15 @@
 window.addEventListener('DOMContentLoaded', (e) => {
 
+  /////////////////////////////////////////////////////////////////////////////////Mobile Menu
+
+  let menuBtn = document.querySelector("#menu-btn")
+  let mobileMenu = document.querySelector("#mobile-menu")
+
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active")
+    mobileMenu.classList.toggle("hidden")
+    document.body.classList.toggle("overflow-hidden")
+  })
   
   const anchorLinks = document.querySelectorAll(".smooth-scroll")
 
