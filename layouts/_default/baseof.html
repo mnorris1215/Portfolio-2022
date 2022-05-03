@@ -14,6 +14,16 @@
 
                 {{- block "main" . }}{{- end }}
 
+                {{ range .Params.blocks }}
+                    {{- if eq .template "b-1-column" -}}{{ partial "blocks/b-1-column" (dict "Params" .) }}{{- end -}}
+
+                    {{- if eq .template "b-image-text" -}}{{ partial "blocks/b-image-text" (dict "Params" .) }}{{- end -}}
+
+                    {{- if eq .template "b-full-width-text" -}}{{ partial "blocks/b-full-width-text" (dict "Params" .) }}{{- end -}}
+
+                    {{- if eq .template "b-full-image" -}}{{ partial "blocks/b-full-image" (dict "Params" .) }}{{- end -}}
+                {{ end }}
+
             </div><!--#content-->
         </div><!--.maxw-->
         {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
