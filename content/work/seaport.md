@@ -5,4 +5,7 @@ publishDate = "2022-02-21T00:23:38+00:00"
 featured_image = "images/work/seaport.jpeg"
 description = "New tools come to play with beauty and ease"
 link = "https://www.seaportcapital.com/"
+
+[[blocks]]
+template = "b-work-footer"
 +++

@@ -22,7 +22,11 @@
                     {{- if eq .template "b-full-width-text" -}}{{ partial "blocks/b-full-width-text" (dict "Params" .) }}{{- end -}}
 
                     {{- if eq .template "b-full-image" -}}{{ partial "blocks/b-full-image" (dict "Params" .) }}{{- end -}}
+
+                    {{- if eq .template "b-work-footer" -}}{{ partial "blocks/b-work-footer" (dict "Params" . "page" $.Page ) }}{{- end -}}
                 {{ end }}
+
+                
 
             </div><!--#content-->
         </div><!--.maxw-->

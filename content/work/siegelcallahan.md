@@ -32,4 +32,7 @@ template = "b-full-width-text"
 [[blocks]]
 image = "images/work/sc-mobile.png"
 template = "b-full-image"
+
+[[blocks]]
+template = "b-work-footer"
 +++
