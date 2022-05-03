@@ -15,6 +15,10 @@
                 {{- block "main" . }}{{- end }}
 
                 {{ range .Params.blocks }}
+
+                    <!-- HP blocks -->
+                    {{- if eq .template "b-hp-showcase" -}}{{ partial "blocks/b-hp-showcase" (dict "Params" . "ctx" $.Site ) }}{{- end -}}
+
                     {{- if eq .template "b-1-column" -}}{{ partial "blocks/b-1-column" (dict "Params" .) }}{{- end -}}
 
                     {{- if eq .template "b-image-text" -}}{{ partial "blocks/b-image-text" (dict "Params" .) }}{{- end -}}

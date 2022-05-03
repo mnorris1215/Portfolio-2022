@@ -1,0 +1,19 @@
+<section id="carousel" class="splide" aria-label="Showcase">
+  <div class="splide__track">
+		<div class="splide__list flex">
+
+      {{ range where .ctx.RegularPages "Section" "work" }}
+
+        {{ $img := resources.Get .Params.featured_image }}
+
+        <!-- Resize image as a test it's working -->
+        {{- $desktop := $img.Resize "1100x" }}
+        {{- $mobile := $img.Resize "800x" }}
+        <div class="w-1/3">
+          <img src="{{ $desktop.RelPermalink }}" class="w-full" alt="">
+        </div>
+      {{ end }}
+
+		</div>
+  </div>
+</section>
