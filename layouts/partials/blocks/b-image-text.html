@@ -1,0 +1,22 @@
+
+  {{ $img := resources.Get .Params.image }}
+
+  {{- $desktop := $img.Resize "1800x" }}
+  {{- $mobile := $img.Resize "800x" }}
+
+
+<div class="flex flex-wrap justify-between items-center my-24">
+  <div class='md:w-1/2 bg-green-500 bg-opacity-60 p-16 {{ if eq .Params.image_alignment "right" }} order-last {{ end }}'>
+    <img class="object-contain w-full h-full max-h-[550px] shadow-xl" src="{{ $desktop.RelPermalink }}" alt="sc-homepage">
+  </div>
+
+  <div class="md:w-1/3">
+    {{ with .Params.headline }}
+      <h2>{{ . }}</h2>
+    {{ end }}
+
+    {{ with .Params.support_text }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,11 @@
+{{ $img := resources.Get .Params.image }}
+
+{{- $desktop := $img.Resize "1800x" }}
+{{- $mobile := $img.Resize "800x" }}
+
+<div class="w-screen ml-1/2 transform -translate-x-1/2 bg-green-900 opacity-90">
+  <div class="max-w-4xl mx-auto p-12">
+    <img src="{{ $desktop.RelPermalink }}" class="object-contain w-full h-full max-h-[700px]" alt="">
+  </div>
+
+</div>
