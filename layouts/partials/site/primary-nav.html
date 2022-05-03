@@ -10,7 +10,7 @@
     {{ if .Site.Menus.main }}
       <ul class="hidden md:flex justify-end">
         {{ range .Site.Menus.main }}
-          <li class="my-12 mx-4"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} {{ if $currentPage.IsMenuCurrent "main" . }} text-green-700 border-green-700 {{ end }} text-xl border-b border-transparent pb-2 hover:text-green-700 transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
+          <li class="my-12 mx-4"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} {{ if $currentPage.IsMenuCurrent "main" . }} text-green-500 border-green-500 {{ end }} text-xl border-b border-transparent pb-2 hover:text-green-700 transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
 
@@ -25,7 +25,7 @@
       <div id="mobile-menu" class="hidden mobile-menu fixed z-20 top-0 left-0 bottom-0 right-0 bg-stone-900">
         <ul class="block text-center pt-24">
           {{ range .Site.Menus.main }}
-            <li class="my-12 mx-4"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} {{ if $currentPage.IsMenuCurrent "main" . }} text-green-700 border-green-700 {{ end }} text-3xl border-b border-transparent pb-2 hover:text-green-700 transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
+            <li class="my-12 mx-4"><a class='{{ if eq .Title "Contact" }} smooth-scroll {{ end }} {{ if $currentPage.IsMenuCurrent "main" . }} text-green-500 border-green-500 {{ end }} text-3xl border-b border-transparent pb-2 hover:text-green-700 transition duration-300' href="{{ .URL }}">{{ .Title }}</a></li>
           {{ end }}
         </ul>
       </div>

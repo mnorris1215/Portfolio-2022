@@ -1,6 +1,21 @@
 {{ define "main" }}
-    <h1 class="font-normal mb-0 text-8xl">{{ .Title }}</h1>
+
+  {{ partial "site/work-header" . }}
+
+
+
+  {{ $img := resources.Get .Params.featured_image }}
+
+{{- $desktop := $img.Resize "1800x" }}
+{{- $mobile := $img.Resize "800x" }}
+
+<div class="w-screen min-h-[800px] ml-1/2 transform -translate-x-1/2 bg-no-repeat bg-fixed bg-cover bg-center" style="background-image:url('{{ $desktop.RelPermalink }}')">
+
+</div>
+
     <div>
       {{ .Content }}
     </div>
+
+  {{ partial "site/work-footer" . }}
 {{ end }}
