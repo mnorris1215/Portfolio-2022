@@ -23,8 +23,19 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   transitionBlock(".article-info")
   transitionBlock(".top-white-line")
+  transitionBlock(".fade-up")
+
+
+  // And now start the process:
+  // setTimeout(callStartChange, 1000);
+
 
 })
+
+// function callStartChange() {
+//   startChange();
+//   setTimeout(callStartChange, 1000);
+// }
 
 
 function removeDoors(){
@@ -64,19 +75,39 @@ function isScrolledIntoView(el) {
   return isVisible;
 }
 
+/////////////////////////////////////////////////////////////////////////////////HP Carousel
+$(document).ready(function(){
+  $('#carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 0.5,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    speed: 3500,
+    arrows: false,
+    pauseOnHover: true,
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////HP Skills
+
+
+
+
 
 //Check if an article is visible
 function transitionBlock(itemClass){
   /////////////////////////////////////////////////////////////////////////////////Articles
-  let articleTitles = document.querySelectorAll(itemClass)
+  let textItems = document.querySelectorAll(itemClass)
 
-  articleTitles.forEach(title => {
-    let isVisible = isScrolledIntoView(title)
+  textItems.forEach(text => {
+    let isVisible = isScrolledIntoView(text)
 
     if(isVisible){
-      title.classList.add("active")
-      if(title.parentNode.previousElementSibling){
-        title.parentNode.previousElementSibling.classList.add("active")
+      text.classList.add("active")
+      if(text.parentNode.previousElementSibling){
+        text.parentNode.previousElementSibling.classList.add("active")
       }
     }
   })

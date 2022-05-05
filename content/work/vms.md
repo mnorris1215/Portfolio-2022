@@ -1,6 +1,6 @@
 +++
 title = "Argonne National Laboratory — Vehicle and Mobility Systems"
-filters = ["React", "Content Management"]
+filters = ["React", "Content Management", "Analytics"]
 publishDate = "2021-11-07T15:48:28-06:00"
 featured_image = "images/work/vms.jpeg"
 description = "A complete rebuild with analytics in mind"
@@ -22,7 +22,7 @@ image_alignment = "left"
 template = "b-image-text"
 
 [[blocks]]
-headline = "Concise Reporting"
+headline = "Google Analytics Custom Integration"
 support_text = "With Google Analytics 4, custom reports were created to give an accurate snapshot of site users"
 image = "images/work/vms-reports.png"
 image_alignment = "right"

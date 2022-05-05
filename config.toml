@@ -18,4 +18,4 @@ title = "Monica Norris Portfolio"
 
 [params]
 custom_js = ["js/isotope.js", "js/main.js"]
-external_js = ["https://code.jquery.com/jquery-3.6.0.slim.min.js", "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/js/splide.min.js"]
+external_js = ["https://code.jquery.com/jquery-3.6.0.slim.min.js", "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"]
