@@ -59,6 +59,9 @@ code{
   @apply bg-stone-900 bg-opacity-80 text-green-500 rounded-sm p-px;
 }
 
+.large-text{
+  font-size: 10rem;
+}
 
 /**************************************************************************** MENU */
 .logo{

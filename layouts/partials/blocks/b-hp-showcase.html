@@ -1,17 +1,18 @@
+<div class="py-24">
+  <h2 class="text-6xl">Showcase</h2>
+  <div class="top-white-line w-full h-px bg-white mt-8 mb-16"></div>
 
-<h2 class="text-6xl">Showcase</h2>
-<div class="top-white-line w-full h-px bg-white mt-8 mb-16"></div>
+  <section id="carousel" aria-label="Showcase">
+    {{ range where .ctx.RegularPages "Section" "work" }}
 
-<section id="carousel" aria-label="Showcase">
-  {{ range where .ctx.RegularPages "Section" "work" }}
+      {{ $img := resources.Get .Params.featured_image }}
 
-    {{ $img := resources.Get .Params.featured_image }}
-
-    <!-- Resize image as a test it's working -->
-    {{- $desktop := $img.Resize "1100x" }}
-    {{- $mobile := $img.Resize "800x" }}
-    <a href="{{ .RelPermalink }}" class="block mx-2">
-      <img src="{{ $desktop.RelPermalink }}" class=" h-full object-cover object-center" alt="">
-    </a>
-  {{ end }}
-</section>
+      <!-- Resize image as a test it's working -->
+      {{- $desktop := $img.Resize "1100x" }}
+      {{- $mobile := $img.Resize "800x" }}
+      <a href="{{ .RelPermalink }}" class="block mx-2">
+        <img src="{{ $desktop.RelPermalink }}" class=" h-full object-cover object-center" alt="">
+      </a>
+    {{ end }}
+  </section>
+</div>
