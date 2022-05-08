@@ -63,6 +63,14 @@ code{
   font-size: 10rem;
 }
 
+@media (min-width:768px) {
+  p {
+    font-size: 20px;
+    margin-bottom: 1.15rem;
+    line-height:1.7;
+  }
+}
+
 /**************************************************************************** MENU */
 .logo{
   box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;

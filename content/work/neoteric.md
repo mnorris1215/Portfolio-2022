@@ -6,6 +6,8 @@ featured_image = "images/work/neoteric.png"
 description = "A cornerstone for a long-standing agency"
 link = "https://www.neotericdesign.com/"
 
+draft = "true"
+
 [[blocks]]
 template = "b-work-footer"
 +++

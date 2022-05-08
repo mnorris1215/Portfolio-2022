@@ -614,8 +614,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 50%;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mb-2 {
@@ -624,6 +624,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-48 {
@@ -640,14 +644,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.-mt-48 {
-  margin-top: -12rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
 }
 
 .block {
@@ -1035,14 +1031,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-48 {
   padding-top: 12rem;
   padding-bottom: 12rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .py-4 {
@@ -1065,31 +1071,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.py-56 {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
-
-.py-44 {
-  padding-top: 11rem;
-  padding-bottom: 11rem;
-}
-
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1100,6 +1081,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pt-16 {
@@ -1124,10 +1109,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-center {
@@ -1190,10 +1171,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-relaxed {
   line-height: 1.625;
-}
-
-.leading-loose {
-  line-height: 2;
 }
 
 .text-white {
@@ -1349,6 +1326,14 @@ code {
 
 .large-text{
   font-size: 10rem;
+}
+
+@media (min-width:768px) {
+  p {
+    font-size: 20px;
+    margin-bottom: 1.15rem;
+    line-height:1.7;
+  }
 }
 
 /**************************************************************************** MENU */
@@ -1646,6 +1631,10 @@ code {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:p-16 {
+    padding: 4rem;
+  }
+
   .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
@@ -1669,26 +1658,6 @@ code {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .lg\:leading-relaxed {
-    line-height: 1.625;
-  }
-
-  .lg\:leading-loose {
-    line-height: 2;
-  }
-
-  .lg\:leading-6 {
-    line-height: 1.5rem;
-  }
-
-  .lg\:leading-10 {
-    line-height: 2.5rem;
-  }
-
-  .lg\:leading-normal {
-    line-height: 1.5;
   }
 
   .lg\:leading-tight {

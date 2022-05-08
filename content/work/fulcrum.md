@@ -6,6 +6,8 @@ featured_image = "images/work/fulcrum.jpeg"
 description = "Provide a way to reduce tax burden and free up capital"
 link = "https://www.fulcrumtaxadvisory.com/"
 
+draft = "true"
+
 [[blocks]]
 template = "b-work-footer"
 +++

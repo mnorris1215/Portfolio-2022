@@ -9,7 +9,7 @@
   {{- $desktop := $img.Resize "1100x" }}
   {{- $mobile := $img.Resize "800x" }}
 
-  <div class="block col-span-2 h-[550px] max-w-4xl p-16 bg-stone-800 bg-opacity-80">
+  <div class="block col-span-2 h-[550px] max-w-4xl md:p-16 bg-stone-800 bg-opacity-80">
     <a href="{{ .RelPermalink }}" class="block w-full h-full  hover:scale-105 transition duration-1000">
       <picture class="">
         <source media="(max-width:401px)" srcset="{{ $mobile.RelPermalink }}">

@@ -6,6 +6,8 @@ featured_image = "images/work/greenhouse.png"
 description = "Virtually connect students with employers to get hired"
 link = "https://gradgreenhouse.com/"
 
+draft = "true"
+
 [[blocks]]
 template = "b-work-footer"
 +++

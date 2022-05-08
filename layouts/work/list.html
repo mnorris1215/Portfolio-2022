@@ -8,8 +8,10 @@
   {{ $filterList := slice }}
 
   {{ range .Pages }}
-    {{ range .Params.filters }}
-      {{ $filterList = $filterList | append . }}
+    {{ if ne .Params.draft "true" }}
+      {{ range .Params.filters }}
+        {{ $filterList = $filterList | append . }}
+      {{ end }}
     {{ end }}
   {{ end }}
 

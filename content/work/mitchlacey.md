@@ -6,6 +6,8 @@ featured_image = "images/work/mitchlacey.png"
 description = "Connect students with teacher with this class bulletin "
 link = "https://www.mitchlacey.com/"
 
+draft = "true"
+
 [[blocks]]
 template = "b-work-footer"
 +++

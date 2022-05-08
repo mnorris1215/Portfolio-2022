@@ -22,10 +22,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
   anchorLinks.forEach(link => {
     link.addEventListener("click", smoothScroll)
   })
-
+  
+  transitionBlock(".fade-up")
   transitionBlock(".article-info")
   transitionBlock(".top-white-line")
-  transitionBlock(".fade-up")
+
 
 
   // And now start the process:
@@ -39,6 +40,24 @@ window.addEventListener('DOMContentLoaded', (e) => {
 //   setTimeout(callStartChange, 1000);
 // }
 
+/////////////////////////////////////////////////////////////////////////////////HP Carousel
+$(document).ready(function(){
+  $('#carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 0.5,
+    // autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    speed: 3500,
+    arrows: false,
+    pauseOnHover: true,
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////HP Skills
+
+
 
 function removeDoors(){
   let doors = document.querySelectorAll("#bamboo-doors > div")
@@ -47,10 +66,11 @@ function removeDoors(){
   })
 }
 
-
-
+/////////////////////////////////////////////////////////////////////////////////////Scroll Event Listener for Fade Transitions
 document.addEventListener("scroll", () => {
+  transitionBlock(".fade-up")
   transitionBlock(".article-info")
+  transitionBlock(".top-white-line")
 })
 
 
@@ -76,25 +96,6 @@ function isScrolledIntoView(el) {
   //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
   return isVisible;
 }
-
-/////////////////////////////////////////////////////////////////////////////////HP Carousel
-$(document).ready(function(){
-  $('#carousel').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 0.5,
-    // autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    speed: 3500,
-    arrows: false,
-    pauseOnHover: true,
-  });
-});
-
-/////////////////////////////////////////////////////////////////////////////////HP Skills
-
-
 
 
 

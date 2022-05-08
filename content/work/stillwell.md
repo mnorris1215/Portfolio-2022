@@ -6,6 +6,8 @@ featured_image = "images/work/stillwell.jpeg"
 description = "A unique site for a brilliant organization"
 link = "https://www.thestillwellinstitute.org/"
 
+draft = "true"
+
 [[blocks]]
 template = "b-work-footer"
 +++

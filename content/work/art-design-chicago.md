@@ -6,6 +6,8 @@ featured_image = "images/work/adc.jpeg"
 description = "Creative yet organized site with an artistic touch"
 link = "https://www.artdesignchicago.org/"
 
+draft = "true"
+
 [[blocks]]
 template = "b-work-footer"
 +++
