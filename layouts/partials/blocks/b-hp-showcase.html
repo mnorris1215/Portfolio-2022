@@ -1,4 +1,4 @@
-<div class="py-24">
+<div class="py-12 md:py-24">
   <h2 class="text-6xl mt-0">Showcase</h2>
   <div class="top-white-line w-full h-px bg-white mt-8 mb-16"></div>
 
@@ -11,7 +11,7 @@
       <!-- Resize image as a test it's working -->
       {{- $desktop := $img.Resize "1100x" }}
       {{- $mobile := $img.Resize "800x" }}
-      <div class="text-white case-study relative block w-full min-h-[450px] pt-20 border-8 border-transparent {{ range .Params.filters }} {{ . | urlize }} {{ end }}">
+      <div class="text-white case-study relative block w-full min-h-[250px] sm:min-h-[450px] pt-20 border-8 border-transparent {{ range .Params.filters }} {{ . | urlize }} {{ end }}">
 
         <img src="{{ $desktop.RelPermalink }}" class="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover" alt="">
 

@@ -24,5 +24,10 @@ template = "b-3-column"
 
 [[blocks]]
 template = "b-hp-showcase"
+
+[[blocks]]
+headline = "Namaste"
+support_text = "I create my work with a calm, meditative manner. I give my clients a sense of peace. When you are ready to talk, I am here."
+template = "b-full-width-text"
 +++
 

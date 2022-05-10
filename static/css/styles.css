@@ -654,6 +654,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .-mt-2 {
   margin-top: -0.5rem;
 }
@@ -714,8 +718,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 550px;
 }
 
-.min-h-\[450px\] {
-  min-height: 450px;
+.min-h-\[250px\] {
+  min-height: 250px;
 }
 
 .w-full {
@@ -726,20 +730,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
-.w-32 {
-  width: 8rem;
+.w-24 {
+  width: 6rem;
 }
 
 .w-1\/2 {
   width: 50%;
 }
 
-.w-8 {
-  width: 2rem;
+.w-32 {
+  width: 8rem;
 }
 
-.w-24 {
-  width: 6rem;
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-screen-2xl {
@@ -810,10 +814,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -888,6 +888,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-width: 1px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-r-8 {
   border-right-width: 8px;
 }
@@ -903,6 +907,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-green-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
 .border-green-800 {
@@ -1054,6 +1063,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 6rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1069,9 +1083,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 12rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-4 {
@@ -1082,11 +1101,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 
 .pb-12 {
@@ -1411,15 +1425,15 @@ code {
   width: 28px;
 }
 
-.burger:hover .burger-strip div:first-child, .burger.active .burger-strip div:first-child{
+.burger.active .burger-strip div:first-child{
   transform: rotate(45deg) translateY(1px) translateX(5px);
 }
 
-.burger:hover .burger-strip div:nth-child(2), .burger.active .burger-strip div:nth-child(2){
+.burger.active .burger-strip div:nth-child(2){
   transform: rotate(-45deg);
 }
 
-.burger:hover .burger-strip div:last-child, .burger.active .burger-strip div:last-child{
+.burger.active .burger-strip div:last-child{
   transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
@@ -1453,7 +1467,8 @@ code {
 }
 
 #work .case-study{
-  height: 450px;
+  min-height: 250px;
+  height:100%;
 }
 
 .case-study-title, .case-study-btn{
@@ -1471,6 +1486,12 @@ code {
   opacity:1;
   transform: translateY(0);
   transition: all 0.5s ease-in-out;
+}
+
+@media(min-width: 768px){
+  #work .case-study{
+    height: 450px;
+  }
 }
 
 /**************************************************************************** WORK DETAIL */
@@ -1631,6 +1652,15 @@ code {
     display: flex;
   }
 
+  .sm\:min-h-\[450px\] {
+    min-height: 450px;
+  }
+
+  .sm\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1647,6 +1677,10 @@ code {
     margin-top: 6rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1659,20 +1693,12 @@ code {
     width: 50%;
   }
 
-  .md\:w-1\/4 {
-    width: 25%;
-  }
-
-  .md\:w-3\/4 {
-    width: 75%;
+  .md\:w-32 {
+    width: 8rem;
   }
 
   .md\:w-1\/3 {
     width: 33.333333%;
-  }
-
-  .md\:w-32 {
-    width: 8rem;
   }
 
   .md\:grid-cols-3 {
@@ -1694,6 +1720,11 @@ code {
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
   }
 
   .md\:text-right {
@@ -1727,5 +1758,23 @@ code {
 
   .lg\:leading-tight {
     line-height: 1.25;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .xl\:w-1\/4 {
+    width: 25%;
+  }
+
+  .xl\:w-3\/4 {
+    width: 75%;
+  }
+
+  .xl\:text-right {
+    text-align: right;
   }
 }

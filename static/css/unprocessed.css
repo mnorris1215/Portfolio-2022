@@ -115,13 +115,13 @@ code{
 .burger-strip div:last-child {
   width: 28px;
 }
-.burger:hover .burger-strip div:first-child, .burger.active .burger-strip div:first-child{
+.burger.active .burger-strip div:first-child{
   transform: rotate(45deg) translateY(1px) translateX(5px);
 }
-.burger:hover .burger-strip div:nth-child(2), .burger.active .burger-strip div:nth-child(2){
+.burger.active .burger-strip div:nth-child(2){
   transform: rotate(-45deg);
 }
-.burger:hover .burger-strip div:last-child, .burger.active .burger-strip div:last-child{
+.burger.active .burger-strip div:last-child{
   transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
@@ -152,7 +152,8 @@ code{
 }
 
 #work .case-study{
-  height: 450px;
+  min-height: 250px;
+  height:100%;
 }
 
 .case-study-title, .case-study-btn{
@@ -170,6 +171,12 @@ code{
   opacity:1;
   transform: translateY(0);
   transition: all 0.5s ease-in-out;
+}
+
+@media(min-width: 768px){
+  #work .case-study{
+    height: 450px;
+  }
 }
 
 

@@ -1,4 +1,4 @@
-<div class="mx-auto my-16 md:py-24">
+<div class="mx-auto py-12 md:py-24">
 
   <h2 class="text-6xl">Skills</h2>
   <div class="top-white-line w-full h-px bg-white mt-8 mb-16"></div>
@@ -11,8 +11,9 @@
           {{ $skill := .| lower }}
 
           <img class='w-24 md:w-32' src="/images/icons/{{ $skill }}.svg" />
+          <span class="mt-2 text-xl block md:hidden">{{ . }}</span>
         </div>
-        <div class="back">
+        <div class="hidden md:block back">
           <h3 class='text-green-600'>{{ . }}</h3>
         </div>
       </div>
