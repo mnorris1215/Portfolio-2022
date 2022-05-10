@@ -2,7 +2,7 @@
 author = "Monica Norris"
 categories = ["Web Development"]
 date = 2019-10-24T00:00:00Z
-description = "JAMstack is a new site architecture that delivers greater speed, security, scalability, and content archiving. In September, I went to San Francisco to attend the JAMStack 2019 conference and learned it's making real waves."
+excerpt = "JAMstack is a new site architecture that delivers greater speed, security, scalability, and content archiving. In September, I went to San Francisco to attend the JAMStack 2019 conference and learned it's making real waves."
 featured_image = "images/articles/jamstack_conf.jpeg"
 highlight = false
 name = "featured_image"

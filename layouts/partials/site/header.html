@@ -3,7 +3,20 @@
 	
 {{ if .IsHome }}
 	{{ partial "site/hp-header" . }}
+{{ end }}
+
+{{ if eq .Section "work" }}
+	{{ if .Params.featured_image }}
+		{{ $img := resources.Get .Params.featured_image }}
+
+		{{- $desktop := $img.Resize "1800x" }}
+		{{- $mobile := $img.Resize "800x" }}
+
+		<div class="w-screen ml-1/2 transform -translate-x-1/2 bg-no-repeat bg-local bg-center" style="background-image:url('{{ $desktop.RelPermalink }}')">
+			{{ partial "site/work-header" . }}
+		</div>
 
 	{{ end }}
+{{ end }}
 
 </header>

@@ -12,7 +12,7 @@
         <div class="max-w-screen-2xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div id="content" class="px-5 py-6 sm:px-6">
 
-                {{- block "main" . }}{{- end }}
+                
 
                 {{ range .Params.blocks }}
 
@@ -34,6 +34,7 @@
                     {{- if eq .template "b-work-footer" -}}{{ partial "blocks/b-work-footer" (dict "Params" . "page" $.Page ) }}{{- end -}}
                 {{ end }}
 
+                {{- block "main" . }}{{- end }}
                 
 
             </div><!--#content-->
