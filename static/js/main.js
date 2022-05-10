@@ -41,19 +41,19 @@ window.addEventListener('DOMContentLoaded', (e) => {
 // }
 
 /////////////////////////////////////////////////////////////////////////////////HP Carousel
-$(document).ready(function(){
-  $('#carousel').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 0.5,
-    // autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    speed: 3500,
-    arrows: false,
-    pauseOnHover: true,
-  });
-});
+// $(document).ready(function(){
+//   $('#carousel').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 500,
+//     cssEase: 'linear',
+//     speed: 3000,
+//     arrows: false,
+//     pauseOnHover: true,
+//   });
+// });
 
 /////////////////////////////////////////////////////////////////////////////////HP Skills
 
@@ -91,7 +91,7 @@ function isScrolledIntoView(el) {
   var elemBottom = rect.bottom;
 
   // Only completely visible elements return true:
-  var isVisible = (elemTop >= 0) && ((elemBottom - 400) <= window.innerHeight);
+  var isVisible = (elemTop >= 0) && ((elemBottom - 200) <= window.innerHeight);
   // Partially visible elements return true:
   //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
   return isVisible;
