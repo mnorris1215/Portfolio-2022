@@ -8,7 +8,7 @@ template = "b-1-column"
 
 
 [[blocks]]
-skills = ["Javascript", "HTML", "CSS", "SASS", "Tailwind", "Hugo", "React", "Next.js", "Cypress", "Netlify", "GA4", "CloudCannon", "Forestry"]
+skills = ["Javascript", "HTML", "CSS", "SASS", "TailwindCSS", "Hugo", "React", "NextJS", "Netlify", "GA4", "CloudCannon", "Forestry"]
 template = "b-hp-skills"
 
 [[blocks]]

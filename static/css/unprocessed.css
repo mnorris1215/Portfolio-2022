@@ -231,7 +231,7 @@ code{
 
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 300px;
+	perspective: 1000px;
   position: relative;
 }
 	/* flip the pane when hovered */
@@ -240,8 +240,7 @@ code{
 	}
 
 .flip-container, .front, .back {
-	width: 220px;
-	height: 100px;
+	height: 250px;
 }
 
 /* flip speed goes here */
@@ -266,7 +265,7 @@ code{
 	}
 
 	.flip-container .flipper {
-		transform-origin: 100% 50px; /* half of height */
+		transform-origin: 100% 125px; /* half of height */
 	}
 
 	.flip-container:hover .flipper {
