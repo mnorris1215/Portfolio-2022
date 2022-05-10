@@ -7,19 +7,19 @@ description = "Site redesign for a client-focused, high-touch law firm"
 link = "https://www.siegelcallahan.com/"
 
 [[blocks]]
-support_text = "<a href=\"https://www.siegelcallahan.com\" title=\"\">Siegel &amp; Callahan</a> show you how our attorneys and experienced professionals can help you achieve the fair tax treatment that’s critical to your success."
+support_text = "<a href=\"https://www.siegelcallahan.com\" title=\"\">Siegel &amp; Callahan</a> show how their attorneys and experienced professionals can help achieve the fair tax treatment that’s critical to success."
 template = "b-1-column"
 
 [[blocks]]
 headline = "Rebrand and Rebuild"
-support_text = "A goal to change an image starts with a beautiful content-managed website to serve as the core to a series of marketing and SEO campaigns."
+support_text = "A goal to change a brand starts with a beautiful content-managed website that serves as the core to a series of marketing and SEO campaigns."
 image = "images/work/sc-homepage.png"
 image_alignment = "left"
 template = "b-image-text"
 
 [[blocks]]
 headline = "Dynamic Filtering"
-support_text = "With a growing list of members, filtering brings ease to the interested readers"
+support_text = "With a growing list of members, filtering brings ease to interested law seekers."
 image = "images/work/sc-team.png"
 image_alignment = "right"
 template = "b-image-text"
