@@ -201,6 +201,10 @@ code{
   transition: all 1s ease-in-out;
 }
 
+.bg-letter{
+  font-size:18rem;
+}
+
 
 /**************************************************************************** HP SHOWCASE */
 .slick-track{

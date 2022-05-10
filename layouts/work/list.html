@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="">
-  <h1 class="font-normal mb-0 text-8xl">{{ .Title }}</h1>
-  <div class="top-white-line w-full h-px bg-white mt-24 mb-4"></div>
+  <h1 class="font-normal mb-0 text-4xl md:text-8xl">{{ .Title }}</h1>
+  <div class="top-white-line w-full h-px bg-white mt-8 md:mt-24 mb-4"></div>
 
 
 
@@ -19,7 +19,7 @@
 
   <!-- Work filter options -->
   <div class=" my-8 ">
-    <div class="work-filters flex flex-wrap justify-center">
+    <div class="work-filters sm:flex flex-wrap justify-center">
       <p data-filter="*" class="filter text-xl font-bold mr-8 pb-2 cursor-pointer border-b border-transparent transition active"> All</p>
     {{ range $filters }}
       <p class="filter text-xl font-bold mr-8 pb-2 cursor-pointer border-b border-transparent transition" data-filter=".{{ .| urlize }}">{{ . }}</p>

@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-  {{ partial "site/work-header" . }}
+
 
 
 
@@ -9,8 +9,8 @@
 {{- $desktop := $img.Resize "1800x" }}
 {{- $mobile := $img.Resize "800x" }}
 
-  <div class="w-screen min-h-[800px] ml-1/2 transform -translate-x-1/2 bg-no-repeat bg-fixed bg-cover bg-center" style="background-image:url('{{ $desktop.RelPermalink }}')">
-
+  <div class="w-screen ml-1/2 transform -translate-x-1/2 bg-no-repeat bg-local bg-center" style="background-image:url('{{ $desktop.RelPermalink }}')">
+    {{ partial "site/work-header" . }}
   </div>
 
 {{ end }}
