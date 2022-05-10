@@ -1,4 +1,24 @@
 {{ define "main" }}
 
+<nav id="next-prev" class="flex flex-wrap mt-24">
+ 
+  <div class="w-full md:w-1/2 mb-12">
+    {{ if .PrevInSection }}
+      <a class="prev text-2xl hover:text-green-500 transition" href="{{ .PrevInSection.Permalink }}">
+        <span class="prev-label mr-4 whitespace-nowrap text-green-500">« Previous</span>
+        <span class="prev-title">{{ .PrevInSection.Title }}</span>
+      </a>
+    {{ end }}
+  </div>
 
+  <div class="w-full md:w-1/2 md:text-right">
+    {{ if .NextInSection }}
+      <a class="next text-2xl hover:text-green-500 transition" href="{{ .NextInSection.Permalink }}">
+        <span class="next-title mr-4">{{ .NextInSection.Title }}</span>
+        <span class="next-label whitespace-nowrap text-green-500">Next »</span>
+      </a>
+    {{ end }}
+  </div>
+
+</nav>
 {{ end }}
