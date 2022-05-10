@@ -1,8 +1,9 @@
 <div class="py-24">
-  <h2 class="text-6xl">Showcase</h2>
+  <h2 class="text-6xl mt-0">Showcase</h2>
   <div class="top-white-line w-full h-px bg-white mt-8 mb-16"></div>
 
-  <section id="carousel" aria-label="Showcase">
+  <section id="carousel" aria-label="Showcase" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
     {{ range where .ctx.RegularPages "Section" "work" }}
 
       {{ $img := resources.Get .Params.featured_image }}
@@ -10,9 +11,25 @@
       <!-- Resize image as a test it's working -->
       {{- $desktop := $img.Resize "1100x" }}
       {{- $mobile := $img.Resize "800x" }}
-      <a href="{{ .RelPermalink }}" class="block mx-2">
-        <img src="{{ $desktop.RelPermalink }}" class=" h-full object-cover object-center" alt="">
-      </a>
+      <div class="text-white case-study relative block w-full min-h-[450px] pt-20 border-8 border-transparent {{ range .Params.filters }} {{ . | urlize }} {{ end }}">
+
+        <img src="{{ $desktop.RelPermalink }}" class="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover" alt="">
+
+        <div class="case-study-overlay flex justify-center items-center absolute top-0 left-0 bottom-0 right-0  hover:bg-green-100 hover:bg-opacity-100 transition duration-1000">
+          <div>
+            <div class="case-study-title -translate-y-16 text-green-800 text-center px-4">
+              <h2 class=" inline-block mt-0 ">{{ .Title }}</h2> <br>
+              <span class="px-2">{{ delimit .Params.filters " / " }}</span>
+            </div>
+            
+            <div class="case-study-btn translate-y-16 flex justify-center mt-12">
+              <a href="{{ .RelPermalink }}" class="inline-block px-4 py-2 text-center border rounded-sm border-green-800 text-green-800 hover:bg-green-800 hover:text-white transition duration-500">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     {{ end }}
   </section>
 </div>
