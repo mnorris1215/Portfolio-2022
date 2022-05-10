@@ -19,9 +19,12 @@
   </div>
 
 
-  <div class="article-info mt-12">
+  <div class="article-info relative mt-12">
+    <span class="bg-letter absolute -top-40 -mt-2 -left-4 opacity-10">{{ substr .Title 0 1 }}</span>
     <span class="text-green-500">{{ .Date.Format "January 2, 2006" }}</span>
     <a href="{{ .RelPermalink }}" class="block hover:text-green-700 transition duration-500"><h2 class="mt-0 mb-8">{{ .Title }}</h2></a>
     <p>{{ .Params.description }}</p>
+    <hr class="border-green-500">
+    <p class="mt-4">{{ .ReadingTime }} min read</p>
   </div>
 </div>
