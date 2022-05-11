@@ -2,6 +2,8 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Monica Norris Portfolio"
 
+timeout = 60000
+
 [menu]
 [[menu.main]]
   title = 'Resume'
