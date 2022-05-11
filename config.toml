@@ -17,5 +17,6 @@ title = "Monica Norris Portfolio"
 
 
 [params]
+gtm = "GTM-WW6FZD4"
 custom_js = ["js/isotope.js", "js/main.js"]
 external_js = ["https://code.jquery.com/jquery-3.6.0.slim.min.js", "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"]
