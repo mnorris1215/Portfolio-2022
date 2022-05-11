@@ -1,21 +1,13 @@
 +++
-advanced_seo = true
-aliases = []
 author = "Monica Norris"
 canonical = ""
 categories = ["Web Development"]
 date = 2021-08-17T20:41:14Z
 excerpt = "Developers can build editor-friendly custom Editor Components in Netlify CMS that handle a range of content or media needs."
 featured_image = "images/articles/puzzle-pieces.jpeg"
-highlight = true
 image_caption = ""
 noindex = false
-overline = "Headless CMS"
-seo_title = ""
-slug = ""
-tags = []
 title = "Master Netlify CMS: custom editor components"
-url_features = false
 
 +++
 
