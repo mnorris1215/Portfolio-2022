@@ -1,4 +1,4 @@
-baseURL = "https://mnorris1215.github.io/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Monica Norris Portfolio"
 
@@ -7,7 +7,7 @@ title = "Monica Norris Portfolio"
   title = 'Resume'
   name = 'Resume'
   weight = 4
-  url = "/uploads/monica_norris_resume_2022.pdf"
+  url = "/uploads/MonicaNorris_Resume.pdf"
 
 [[menu.main]]
   title = 'Contact'
