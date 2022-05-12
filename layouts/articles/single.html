@@ -11,7 +11,7 @@
   <div class="mr-0 float-right clear-both mb-20">
     <span class="text-green-500 text-right float-right">{{ .Date.Format "January 2, 2006" }}</span>
     <h1 class="font-normal text-2xl md:text-8xl text-right pb-4">{{ .Title }}</h1>
-    <img src="{{ $desktop.RelPermalink }}" alt="" class="float-right clear-both">
+    <img src="{{ $desktop.RelPermalink }}" alt="{{ .Params.image_alt }}" class="float-right clear-both">
   </div>
   
 

@@ -7,7 +7,7 @@
 
 <div class="text-white case-study relative block w-full lg:w-1/2 pt-20 border-8 border-transparent {{ range .Params.filters }} {{ . | urlize }} {{ end }}">
 
-  <img src="{{ $desktop.RelPermalink }}" class="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-contain sm:object-cover" alt="">
+  <img src="{{ $desktop.RelPermalink }}" class="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-contain sm:object-cover" alt="{{ .Params.image_alt }}">
 
   <div class="case-study-overlay flex justify-center items-center absolute top-0 left-0 bottom-0 right-0  hover:bg-green-100 hover:bg-opacity-100 transition duration-1000">
     <div>

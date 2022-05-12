@@ -7,15 +7,10 @@ categories = ["Web Development"]
 date = 2022-02-18T15:35:18Z
 excerpt = "Netlify CMS (NCMS) is an open-source content management system developed by the Netlify team. It offers flexibility and simplicity by removing unused tools a lot of similar CMSs contain."
 featured_image = "images/articles/dry-up.jpeg"
-highlight = true
-image_caption = ""
-noindex = false
+image_alt = "desert-house"
 overline = "Content Management Systems"
 seo_title = ""
-slug = ""
-tags = []
 title = "How to DRY up Netlify CMS configuration files"
-url_features = false
 
 +++
 Netlify CMS (NCMS) is an open-source content management system developed by the Netlify team. It offers flexibility and simplicity by removing unused tools a lot of similar CMSs contain.

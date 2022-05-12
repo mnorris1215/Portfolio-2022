@@ -5,15 +5,11 @@ categories = ["Web Development"]
 date = 2020-03-02T19:58:28Z
 excerpt = "Use Cloudinary's CLI tool for fast, efficient image migration on JAMstack sites."
 featured_image = "images/articles/bird-migration.jpeg"
-highlight = false
-image_caption = ""
-omit_header_text = true
+image_alt = "bird-migration"
 overline = "Image optimization"
 seo_title = ""
-sitemap_exclude = false
 slug = ""
 title = "Migrate images to the cloud with Cloudinary CLI"
-url-features = false
 
 +++
 As the rise of JAMstack continues to blast forward this year, many developers are coming to realize the challenges and obstacles that might make migrating their site to the JAMstack more complicated than expected. One undertaking, in particular, is asset migration. There is a multitude of ways you can move images to remote storage, but that does not make the work easy or explicit. Furthermore, many of the currently available tools, like [GCP](https://cloud.google.com/storage/pricing) and [Amazon's S3](https://aws.amazon.com/s3/pricing/), that handle this task can become expensive, depending on multiple factors such as image sizes, number of image files, or the traffic your site attracts.

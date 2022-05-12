@@ -3,6 +3,7 @@ title = "Seaport Capital"
 filters = ["User Experience", "Content Management"]
 publishDate = "2022-02-21T00:23:38+00:00"
 featured_image = "images/work/seaport.jpeg"
+image_alt = "seaport-hp-image"
 description = "New tools come to play with beauty and ease"
 link = "https://www.seaportcapital.com/"
 

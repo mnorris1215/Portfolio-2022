@@ -12,7 +12,7 @@
     <a href="{{ .RelPermalink }}" class="block w-full h-full  hover:scale-105 transition duration-1000">
       <picture class="">
         <source media="(max-width:401px)" srcset="{{ $mobile.RelPermalink }}">
-        <img src="{{ $desktop.RelPermalink }}" class="h-full w-full object-cover shadow-2xl bg-emerald-300 p-4 bg-opacity-30">
+        <img src="{{ $desktop.RelPermalink }}" class="h-full w-full object-cover shadow-2xl bg-emerald-300 p-4 bg-opacity-30" alt="{{ .Params.image_alt }}">
       </picture>
     </a>
   </div>

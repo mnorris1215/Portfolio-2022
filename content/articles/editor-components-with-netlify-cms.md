@@ -5,7 +5,7 @@ categories = ["Web Development"]
 date = 2021-08-17T20:41:14Z
 excerpt = "Developers can build editor-friendly custom Editor Components in Netlify CMS that handle a range of content or media needs."
 featured_image = "images/articles/puzzle-pieces.jpeg"
-image_caption = ""
+image_alt = "puzzle-pieces"
 noindex = false
 title = "Master Netlify CMS: custom editor components"
 

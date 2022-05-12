@@ -3,6 +3,7 @@ title = "CIRR Schools"
 filters = ["JS Development", "Content Management", "User Experience"]
 publishDate = "2021-02-21T00:23:38+00:00"
 featured_image = "images/work/cirr-map.png"
+image_alt = "cirr-map"
 description = "Create a map to make finding coding bootcamps simple and concise"
 link = "https://map.cirr.org/"
 

@@ -3,6 +3,7 @@ title = "Nora Al Shaikh"
 filters = ["Content Management", "User Experience", "JS Development"]
 publishDate = "2020-06-21T00:23:38+00:00"
 featured_image = "images/work/nora.png"
+image_alt = "nora-website"
 description = "An exemplary e-commerce site for fashion world"
 link = "https://www.noraalshaikh.com/"
 
