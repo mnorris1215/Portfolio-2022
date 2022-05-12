@@ -654,6 +654,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1197,10 +1201,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-style: italic;
 }
 
-.leading-10 {
-  line-height: 2.5rem;
-}
-
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -1281,8 +1281,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /**************************************************************************** TYPOGRAPHY */
 
+html, body{
+  font-family: 'Cormorant Garamond', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 p {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 1.15rem;
   line-height:1.7;
 }
@@ -1367,7 +1373,7 @@ code {
 
 @media (min-width:768px) {
   p {
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 1.15rem;
     line-height:1.7;
   }
@@ -1550,52 +1556,55 @@ code {
   transition: all .75s ease-in-out;
 }
 
-/* entire container, keeps perspective */
-
-.flip-container {
-  perspective: 1000px;
-  position: relative;
-}
-
-/* flip the pane when hovered */
-
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
-
 .flip-container, .front, .back {
-  height: 250px;
+  height: 150px;
+  width:150px;
 }
 
-/* flip speed goes here */
+@media(min-width:768px){
+  /* entire container, keeps perspective */
 
-.flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
-}
+  .flip-container {
+    perspective: 1000px;
+    position: relative;
+  }
 
-/* hide back of pane during swap */
+  /* flip the pane when hovered */
 
-.front, .back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
 
-.back {
-  transform: rotateX(-180deg);
-}
+  /* flip speed goes here */
 
-.flip-container .flipper {
-  transform-origin: 100% 125px;
-  /* half of height */
-}
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
 
-.flip-container:hover .flipper {
-  transform: rotateX(180deg);
+  /* hide back of pane during swap */
+
+  .front, .back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .back {
+    transform: rotateX(-180deg);
+  }
+
+  .flip-container .flipper {
+    transform-origin: 100% 75px;
+    /* half of height */
+  }
+
+  .flip-container:hover .flipper {
+    transform: rotateX(180deg);
+  }
 }
 
 .hover\:scale-105:hover {
@@ -1778,3 +1787,5 @@ code {
     text-align: right;
   }
 }
+
+
