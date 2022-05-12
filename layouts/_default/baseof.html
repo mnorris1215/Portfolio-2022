@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en-us" }}">
     {{ block "head" . }}{{- partial "site/head.html" . -}}{{ end }}
-    <body class="relative overflow-x-hidden bg-black bg-site-background bg-opacity-10 text-white">
+    <body class="relative overflow-x-hidden bg-black bg-site-background bg-opacity-10 text-white" style="opacity:0">
         <!-- Google Tag Manager (noscript) -->
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.gtm }}"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -15,7 +15,7 @@
         {{ block "header " . }}{{ partial "site/header.html" . }}{{ end }}
 
         <div class="max-w-screen-2xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
-            <div id="content" class="px-5 py-6 sm:px-6">
+            <div id="content" class="py-6 sm:px-6">
 
                 
 

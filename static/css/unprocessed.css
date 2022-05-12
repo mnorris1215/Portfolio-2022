@@ -12,7 +12,10 @@ html, body{
   font-family: 'Cormorant Garamond', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+body{
+  opacity: 1 !important;
 }
 
 p {
@@ -36,32 +39,70 @@ h6 {
 }
 
 h1 {
-  font-size: 3.052em;
+  font-size: 2.852em;
   font-weight: 800;
 }
 
 h2 {
-  font-size: 2.741em;
+  font-size: 2.641em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2.553em;
+  font-size: 2.353em;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 2.35em;
+  font-size: 2.15em;
   font-weight: 400;
 }
 
 h5 {
-  font-size: 2.05em;
+  font-size: 1.95em;
   font-weight: 300;
 }
 
 a:not([class]){
   @apply  underline hover:text-green-700 transition duration-300;
+}
+
+
+@media(min-width:768px) {
+  h1 {
+    font-size: 3.052em;
+    font-weight: 800;
+  }
+  
+  h2 {
+    font-size: 2.741em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.553em;
+    font-weight: 600;
+  }
+  
+  h4 {
+    font-size: 2.35em;
+    font-weight: 400;
+  }
+  
+  h5 {
+    font-size: 2.05em;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 28px;
+    margin-bottom: 1.15rem;
+    line-height:1.7;
+  }
+
+  span{
+    font-size: 24px;
+  }
 }
 
 /******************************************************************** Lists and Block-quotes */
@@ -92,17 +133,6 @@ code{
   font-size: 10rem;
 }
 
-@media (min-width:768px) {
-  p {
-    font-size: 28px;
-    margin-bottom: 1.15rem;
-    line-height:1.7;
-  }
-
-  span{
-    font-size: 24px;
-  }
-}
 
 /**************************************************************************** MENU */
 .logo{
@@ -122,7 +152,6 @@ code{
   align-items: center;
   padding: 5px;
   transition: all .5s ease;
-  margin: 1em;
 }
 .burger:hover, .burger.active {
   background: rgb(0, 98, 0);
@@ -208,7 +237,6 @@ code{
 
 #work .case-study{
   min-height: 250px;
-  height:100%;
 }
 
 .case-study-title, .case-study-btn{

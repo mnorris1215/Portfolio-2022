@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '528px'
+      },
       backgroundImage: {
         'site-background': "url('/images/dark_wood.png')",
       },

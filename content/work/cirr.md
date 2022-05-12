@@ -1,6 +1,6 @@
 +++
 title = "CIRR Schools"
-filters = ["JS Development", "Content Management", "User Experience"]
+filters = ["Component Development", "Content Management"]
 publishDate = "2021-02-21T00:23:38+00:00"
 featured_image = "images/work/cirr-map.png"
 image_alt = "cirr-map"
