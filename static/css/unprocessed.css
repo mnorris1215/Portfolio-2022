@@ -21,6 +21,10 @@ p {
   line-height:1.7;
 }
 
+span{
+  font-size: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -37,22 +41,22 @@ h1 {
 }
 
 h2 {
-  font-size: 2.441em;
+  font-size: 2.741em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.953em;
+  font-size: 2.553em;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 2.35em;
   font-weight: 400;
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: 2.05em;
   font-weight: 300;
 }
 
@@ -77,6 +81,10 @@ code{
     font-size: 28px;
     margin-bottom: 1.15rem;
     line-height:1.7;
+  }
+
+  span{
+    font-size: 24px;
   }
 }
 

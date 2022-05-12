@@ -16,6 +16,19 @@ window.addEventListener('DOMContentLoaded', (e) => {
     mobileMenu.classList.toggle("hidden")
     document.body.classList.toggle("overflow-hidden")
   })
+
+    //////////////////////////////////Contact Link
+  let mobileContact = document.getElementById("mobile-contact");
+
+  if(mobileContact){
+    mobileContact.addEventListener("click", () => {
+      menuBtn.classList.remove("active")
+      mobileMenu.classList.add("hidden")
+      document.body.classList.remove("overflow-hidden")
+    })
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////Transitions
   
   const anchorLinks = document.querySelectorAll(".smooth-scroll")
 
@@ -26,6 +39,8 @@ window.addEventListener('DOMContentLoaded', (e) => {
   transitionBlock(".fade-up")
   transitionBlock(".article-info")
   transitionBlock(".top-white-line")
+
+
 
 
 

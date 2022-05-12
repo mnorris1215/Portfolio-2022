@@ -1,13 +1,14 @@
-<div class="w-screen py-32 ml-1/2 transform -translate-x-1/2 bg-black bg-opacity-50">
+<div class="w-screen py-32 ml-1/2 transform -translate-x-1/2 bg-black bg-opacity-70">
   <div class="max-w-6xl mx-auto h-full">
     <div class="max-w-2xl h-full">
       <div class="pt-32">
+
+        <h1 class="block text-6xl my-6 border-b-4 pb-4 border-green-600">{{ .Title }}</h1>
+        <h3 class="mt-0 ">{{ .Params.description }}</h3>
         {{ if .Params.filters }}
-         <p class="italic text-xl text-gray-200 mb-0">{{ delimit .Params.filters ", " }}</p>
-        {{ end }}
-      
-        <h1 class="block text-6xl my-6">{{ .Title }}</h1>
-        <h2 class="leading-relaxed mt-0">{{ .Params.description }}</h2>
+        <p class="italic font-bold mb-0 mt-8 text-3xl">{{ delimit .Params.filters ", " }}</p>
+       {{ end }}
+     
       </div>
 
     </div>

@@ -24,9 +24,9 @@
   <!-- Work filter options -->
   <div class=" my-8 ">
     <div class="work-filters sm:flex flex-wrap justify-center">
-      <p data-filter="*" class="filter text-xl font-bold mr-8 pb-2 cursor-pointer border-b border-transparent transition active"> All</p>
+      <p data-filter="*" class="filter font-bold mr-8 pb-2 cursor-pointer border-b border-transparent transition active"> All</p>
     {{ range $filters }}
-      <p class="filter text-xl font-bold mr-8 pb-2 cursor-pointer border-b border-transparent transition" data-filter=".{{ .| urlize }}">{{ . }}</p>
+      <p class="filter font-bold mr-8 pb-2 cursor-pointer border-b border-transparent transition" data-filter=".{{ .| urlize }}">{{ . }}</p>
     {{ end }}
     </div>
   </div>
