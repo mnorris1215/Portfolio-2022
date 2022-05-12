@@ -5,7 +5,6 @@
   <!-- Get image -->
   {{ $img := resources.Get .Params.featured_image }}
 
-  <!-- Resize image as a test it's working -->
   {{- $desktop := $img.Resize "1100x" }}
   {{- $mobile := $img.Resize "800x" }}
 

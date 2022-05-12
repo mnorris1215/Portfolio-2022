@@ -20,6 +20,10 @@
   <!-- End Google Tag Manager -->
 
 
-  {{ template "_internal/opengraph.html" . }}
+
+
+  {{ partial "site/opengraph.html" . }}
+
+  {{ partial "site/twitter_cards.html" . }}
+
   {{- template "_internal/schema.html" . -}}
-  {{- template "_internal/twitter_cards.html" . -}}

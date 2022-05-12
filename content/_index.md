@@ -1,7 +1,6 @@
 +++
 title = "Home"
 
-
 [[blocks]]
 support_text = "I create works of art. I believe every project has a unique message and I take pride if I convey it thoroughly with beauty. With a passion for animation, I bring life to designs and create interactive experiences for all to enjoy. "
 template = "b-1-column"
