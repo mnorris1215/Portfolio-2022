@@ -3,6 +3,15 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   slowScroll();
 
+let textBorders = document.querySelectorAll(".text-border");
+
+textBorders.forEach(border => {
+  border.classList.add("active");
+})
+
+
+
+
   /////////////////////////////////////////////////////////////////////////////////Bamboo Doors
   removeDoors()
 
@@ -39,9 +48,6 @@ window.addEventListener('DOMContentLoaded', (e) => {
   transitionBlock(".fade-up")
   transitionBlock(".article-info")
   transitionBlock(".top-white-line")
-
-
-
 
 
   // And now start the process:

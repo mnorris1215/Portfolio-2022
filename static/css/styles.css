@@ -758,8 +758,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 1536px;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-3xl {
@@ -774,8 +774,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 56rem;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .-translate-x-1\/2 {
@@ -880,12 +880,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
-.border-8 {
-  border-width: 8px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-8 {
+  border-width: 8px;
 }
 
 .border-b {
@@ -1350,6 +1350,19 @@ a:not([class]):hover {
   color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
+/******************************************************************** Lists and Block-quotes */
+
+ol, ul:not([class]){
+  list-style: initial !important;
+  margin-bottom: 1.15rem !important;
+  font-size: 24px;
+  margin-left: 50px !important;
+}
+
+ol{
+  list-style-type: decimal !important;
+}
+
 pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1472,6 +1485,28 @@ code {
 .bamboo-left.remove, .bamboo-right.remove{
   /* opacity:0; */
   transition: all 1s ease-in-out;
+}
+
+/**************************************************************************** HP HEADER */
+
+.text-border{
+  position: relative;
+}
+
+.text-border::after{
+  position: absolute;
+  bottom: 0px;
+  left:0;
+  transition: all ease-in-out 1s;
+  background: none repeat scroll 0 0 rgb(22 163 74);
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 0;
+}
+
+.text-border.active::after{
+  width: 100%;
 }
 
 /**************************************************************************** WORK LIST */
@@ -1655,6 +1690,11 @@ code {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 .hover\:text-green-700:hover {

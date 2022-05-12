@@ -64,6 +64,22 @@ a:not([class]){
   @apply  underline hover:text-green-700 transition duration-300;
 }
 
+/******************************************************************** Lists and Block-quotes */
+ol, ul:not([class]){
+  list-style: initial !important;
+  margin-bottom: 1.15rem !important;
+  font-size: 24px;
+}
+
+ol, ul:not([class]){
+  margin-left: 50px !important;
+}
+
+ol{
+  list-style-type: decimal !important;
+}
+
+
 pre{
   @apply my-8 py-8 px-4 bg-stone-900 bg-opacity-80 rounded-sm shadow-md;
 }
@@ -159,6 +175,28 @@ code{
 .bamboo-left.remove, .bamboo-right.remove{
   /* opacity:0; */
   transition: all 1s ease-in-out;
+}
+
+/**************************************************************************** HP HEADER */
+
+.text-border{
+  position: relative;
+}
+
+.text-border::after{
+  position: absolute;
+  bottom: 0px;
+  left:0;
+  transition: all ease-in-out 1s;
+  background: none repeat scroll 0 0 rgb(22 163 74);
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 0;
+}
+
+.text-border.active::after{
+  width: 100%;
 }
 
 
