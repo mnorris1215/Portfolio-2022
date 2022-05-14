@@ -6,7 +6,7 @@
 
 
 <div class="flex flex-wrap justify-between items-center my-24 px-4">
-  <div class='md:w-1/2 bg-green-500 bg-opacity-60 p-6 md:p-12 {{ if eq .Params.image_alignment "right" }} order-last {{ end }}'>
+  <div class='md:w-1/2 bg-green-500 bg-opacity-60 p-6 md:p-12 {{ if eq .Params.image_alignment "right" }} md:order-last {{ end }}'>
     <img class="object-contain w-full h-full max-h-[550px] shadow-xl" src="{{ $desktop.RelPermalink }}" alt="sc-homepage">
   </div>
 

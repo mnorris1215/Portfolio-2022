@@ -12,7 +12,11 @@
 		{{- $desktop := $img.Resize "1800x" }}
 		{{- $mobile := $img.Resize "800x" }}
 
-		<div class="w-screen ml-1/2 transform -translate-x-1/2 bg-no-repeat bg-local bg-center" style="background-image:url('{{ $desktop.RelPermalink }}')">
+		<div class="md:hidden mt-12">
+			{{ partial "site/work-header" . }}
+		</div>
+
+		<div class="hidden md:block w-screen ml-1/2 transform -translate-x-1/2 bg-no-repeat md:bg-local bg-center bg-contain md:bg-cover" style="background-image:url('{{ $desktop.RelPermalink }}')">
 			{{ partial "site/work-header" . }}
 		</div>
 
