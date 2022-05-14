@@ -1,6 +1,6 @@
 +++
 title = "Univerisity of Wisconsin Madison Shelter Medicine"
-filters = ["Component Development", "Content Management", "Frontend Testing"]
+filters = ["Component Development", "Analytics", "Frontend Testing"]
 publishDate = "2020-10-21T00:23:38+00:00"
 featured_image = "images/work/uwshelter.jpeg"
 image_alt = "uwmsheltermedicine"
